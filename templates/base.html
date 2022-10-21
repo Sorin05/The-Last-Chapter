@@ -31,5 +31,30 @@
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
+
     {% block extra_js %}
     {% endblock %}
+
+
+    <title>The Last Chapter {% block extra_title %}{% endblock %}</title>
+</head>
+
+ <body>
+    <header class = "container-fluid fixed-top"></header>
+
+
+    {%if messages %}
+    <div class = "messages-container"></div>
+    {% endif %}
+
+    {% block page_header %}
+    {%endblock%}
+
+    {%block content %}
+    {% endblock %}
+
+    {%block postloadjs%}
+    {% endblock %}
+
+ </body>
+</html>
