@@ -90,9 +90,15 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link{
+
+/* -------------------------------- Media Queries */
+
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -101,7 +107,6 @@ a.category-badge > span.badge:hover {
     max-width: 80%;
   }
 }
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
