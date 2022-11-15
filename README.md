@@ -1,108 +1,326 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [UX](#ux)
+    - [User Stories](#user-stories)
+    - [Strategy](#strategy)
+    - [Scope](#scope)
+  - [Typography](#typography)
+  - [Color](#color)
+  - [Structure](#structure)
+    - [Skeleton](#skeleton)
+    - [Wireframes](#wireframes)
+    - [Mobile](#mobile)
+    - [Desktop](#desktop)
+  - [Database Schema](#database-schema)
+  - [Features](#features)
+    - [Existing Features (Photo Links)](#existing-features-photo-links)
+      - [Navbar](#navbar)
+      - [Homepage](#homepage)
+      - [Footer](#footer)
+      - [Pay form Page](#pay-form-page)
+      - [Register as a User](#register-as-a-user)
+      - [Product Page](#product-page)
+      - [404 Page](#404-page)
+    - [Future Features](#future-features)
+      - [Model of payment based on subscriptions](#model-of-payment-based-on-subscriptions)
+      - [Chat window](#chat-window)
+      - [Wishlist](#wishlist)
+  - [SEO](#seo)
+  - [Social Media](#social-media)
+  - [Email Marketing](#email-marketing)
+  - [Testing](#testing)
+    - [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-ux-section)
+      - [robots.txt](#robotstxt)
+      - [sitemap.xml](#sitemapxml)
+      - [Functionality Testing](#functionality-testing)
+  - [Deployment](#deployment)
+      - [Deploy to Heroku](#deploy-to-heroku)
+  - [Credits](#credits)
+      - [Media](#media)
+      - [Code](#code)
+      - [Programming Languages](#programming-languages)
+      - [Payments](#payments)
+      - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
+      - [Acknowledgements](#acknowledgements)
 
-Welcome Sorin05,
+**[LIVE DEMO - 
+*
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Introduction
+The Last Chapter is an book retailer best known for selling books, stationery, cards, gifts. Unfornutely I cannot finish this project on time so my first submision is of a incomplete project that im still working on . The whole project is based on Code Institute Boutique Ado with the intent of adding my own apps and features making it an online bookstore and office supplies. 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX
 
-`python3 -m http.server`
+  ### User Stories
 
-A blue button should appear to click: _Make Public_,
+  User story format/steps has been taken from Boutique Ado and imported from Repository ecommerce2 (a test for my project) and more issues have been resolved manually during the project.
+  
+  -Account Creation</a>
 
-Another blue button should appear to click: _Open Browser_.
+- VIEWING AND NAVIGATION
+  - As a shopper, I want to view items in my bag to be purchased so I can identify the total cost of my purchase and all items I will receive.</a>
+  - As a shopper, I want to view orders and confirmation after checkout so I can verify that I haven't made any mistakes.</a>
+  
+- REGISTRATION AND USER ACCOUNTS
+  - As a user, I want easily register for an account so I can have personal account information.</a>
+  - As a user, I want to easily recover my password in case I forgot it so I can recover access to my account.</a>
+  - Log In / Log Out  As a user,   I want to easily log in or log out so I can access my personal account details.</a>
+  - As a shopper, I can change my account user details(name) so I can pay with another card without problems.</a>
+  - >As a shopper, I can delete my account and details if I don't want to use the website or if my details to not kept in the database.</a>
+  - As a Shopper, I can receive an email of confirmation when I am resetting my password so that I know that my new password is active and has been changed successfully.</a>
+  - As a user, I want to have a personalized user profile so I can view my personal order history and order confirmations and save my payment information.</a>
+  - As a shopper, I want to receive an email confirmation after checking out so I can keep the confirmation of what I've purchase for my records.</a>
+    
+- SORTING AND SEARCHING
+  - As a shopper, I can choose the category that I want to see and the group of products I am interested <a>
+  - As a shopper, I want to sort the list of available products so I can easily categorically sort products.</a>
+  
+- PURCHAING AND CHECKOUT
+  - As a shopper, I want to adjust the number of individual items in my bag so I can easily make changes to my purchase before checking out.</a>
+  - As a shopper, I can delete items from my basket so that I can buy only the items that I need.</a>
+  - As a shopper I can press the delete button so that I can have the final price after I had deleted an item in my cart/basket.</a>
+  
+- ADMIN AND STORE MANAGEMENT
+  - As a site owner, I want to add a product so I can add new items to my store.</a>
+  - As a store owner, I want to edit/update a product so I can change product prices, descriptions, images, and other product criteria.</a>
+  - As a shop owner, I want to delete a product so I can remove items that is no longer for sale.</a>
+   
+  
+  ### Strategy
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - This is a website where users that love audio books can play them to their kids : 
+  - Users that have kids
+   ### Scope
+   - The website provides for the user an easy navigation , photos,content,filter and prices with regards the books.
 
-A blue button should appear to click: _Make Public_,
+## Typography
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Color
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ ## Structure
+ ### Skeleton
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+   ### Wireframes 
+  - Wireframes created with Balsamiq
+  
 
-------
+   ### Mobile
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+   ### Desktop
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+   </details>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Database Schema
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  
+   ### Existing Features (Photo Links)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+   #### Navbar
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+   
+  
+   #### Homepage
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+   
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+   #### Footer
+   
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+   #### Pay form Page
+   
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+   #### Register as a User
+  
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+   #### Product Page
+ 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+   #### 404 Page
+   
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+   ### Future Features 
 
-**So….?**
+   #### Model of payment based on subscriptions
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+   - 
 
-**Can I opt out?**
+   #### Chat window
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+   - 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+   #### Wishlist
+  
+   - 
 
-**Anything more?**
+  ## SEO
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+  ## Social Media
+ 
 
-Happy coding!
+  ## Email Marketing 
+  
+
+  ## Testing
+
+  The project was manually tested by fallowing the steps :
+  - Code was run trough the validator resulting no issues
+  - Deploying the project from gitpod workspace trough Heroku
+  - The site was also tested on I-Pad , I-Phone and Laptop.
+  
+  ### Testing User Stories from User Experience (UX) Section
+
+  - All user stories in the list above has been tested and confirmed after implementation.
+   
+  #### robots.txt  
+   -  
+  #### sitemap.xml  
+   -  
+  
+  #### Functionality Testing
+
+  * Lighthouse
+
+    
+
+  * HTML
+
+    
+
+  * CSS
+
+   
+
+
+  * PEP8 
+  <
+
+  </details>
+
+
+  ## Deployment
+
+  Local Deployment
+
+   I used Gitpod to write the code for my project, with regular commits to document the creation process. For this project, I deployed it to Heroku and used "git push Heroku master" to ensure that my GitHub pushes were also pushed to Heroku.
+
+      Create an .env that contains these variables :
+      SECRET_KEY=*******
+      DEVELOPMENT=True
+      ENVIRON=DEVELOPMENT
+      STRIPE_PKEY=*******
+      STRIPE_SKEY=*******
+
+  #### Deploy to Heroku
+
+    To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+
+    Start by installing everything in the requirements.txt file.
+    You should have the corect requirements.txt and Procfile before moving on with the deployment.
+    Log in to Heroku apps
+    On Heroku page go to dashboard then to the "New" menu and choose "Create new app"
+    Create a unique name for your app , select your region and click "Create app".
+    Now the new app's dashboard is opened. Click on the resources tab.
+    Add the Heroku Postgres Add-on.
+    Go to the settings tab and reveal the Config Vars and add :
+    ALLOWED_HOSTS=https://heroku-url
+    CLOUDINARY_URL=cloudinary://cloudinary-url
+    DATABASE_URL=postgres://database_url
+    DEVELOPMENT=False (DEBUG)
+    ENVIRON=PRODUCTION
+    EMAIL_HOST=smtp.server
+    EMAIL_PORT=587
+    EMAIL_HOST_USER=****
+    EMAIL_HOST_PASS=****
+    EMAIL_FROM=email@from
+    SECRET_KEY=****
+    STRIPE_PKEY=****
+    STRIPE_SKEY=****
+    STRIPE_ENDPOINT_SECRET=****
+    Click on "Deploy" and select your deploy method and repository.
+    Click "Connect" on selected repository
+    Click "Deploy Branch" in the manual deploy section. -> Heroku will now deploy the App.
+    Development Environment
+
+  ## Credits
+
+  #### Media
+
+   - All images for the book  have been taken from  http://www.amazon.com
+   - Cover image for the site has been taken from  https://www.centracare.com
+   - All description content for the books has been taken from https://books.google.ie/books/about/
+
+  #### Code 
+
+   - Through this project, I relied heavily on tutorials and Bootstrap examples.
+
+   - Code Institute Boutique Ado and Very Academy on Youtube
+
+   - I found this bookstore walkthrough to be brilliant. I found it extremely helpful for making Django sites more dynamic. As a result of this tutorial, I learned how to make AJAX calls. I also learned a lot about database design and setting up a Stripe webhook.
+
+   - [Codegrepper](https://www.codegrepper.com/code-examples/python/jinja+get+current+url+django) as a general resource.
+
+   - [W3School](https://www.w3schools.com/) as a general resource.
+
+  #### Programming Languages 
+
+  - Python
+  - HTML
+  - CSS
+  - JavaScript
+  
+
+  #### Payments
+
+  - Payment functionality was implemented using the Stripe system. The system was set up using the Boutique Ado project and Stripe documentation.
+
+  - For testing the payment system, the following dummy details can be used: Card number: 4242 4242 4242 4242 Expiry: 04/24 CVC: 242
+
+  - No auth: 4242424242424242
+
+  - Auth: 4000002500003155
+
+  - Error: 4000000000009995
+
+  
+  #### Frameworks, Libraries & Programs Used
+
+  - [Balsamiq](https://balsamiq.cloud/) - Was used to create the wireframes
+  - [Bootstrap](https://getbootstrap.com/) - Was used to contribute to responsiveness and styling of the site
+  - [TinyJPG](https://tinyjpg.com/) - Was used to compress images before uploading
+  - [GitHub](https://github.com/) - Holds the repository of my project, GitHub connects to GitPod and Heroku
+  - [GitPod](https://gitpod.io/) - Connected to GitHub, GitPod hosted the coding space,
+   allowing the project to be built and then committed to the GitHub repository.
+  - [Heroku](https://heroku.com/) - Connected to the GitHub repository, Heroku is a cloud application platform used 
+   to deploy this project so the backend language can be utilised/tested.
+  - [Django](https://www.djangoproject.com/) - This framework was used to build the foundations of this project
+  - [Gunicorn](https://gunicorn.org/) - Gunicorn is a pure-Python HTTP server for WSGI applications.
+  - [Cloudinary](https://cloudinary.com/) - Used to store images online for the recipe posts.
+   a list of ingredients and method steps.
+  - [GoogleFonts](https://fonts.google.com/) - Provide fonts for the website.
+  - [FontAwesome](https://fontawesome.com/) - Was used for icons.
+  - [AmIResponsive](https://ui.dev/amiresponsive) - To check if the site is responsive on different screen sizes.
+  - [W3CMarkupValidator](https://jigsaw.w3.org/) - Was used to validate HTML.
+  - [Colors](https://color-hex.org/) - To make color palette
+
+ 
+  #### Acknowledgements
+
+ 
