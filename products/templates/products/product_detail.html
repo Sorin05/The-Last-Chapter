@@ -65,6 +65,17 @@
                                     </select>
                                 </div>
                             {% endif %}
+                            {% if wishlist %}
+                            <span class="d-none d-lg-inline-block red">Remove from Wishlist: </span>
+                            <a href="{% url 'remove_from_wishlist' product.id %}">
+                                <i class="hover-heart-green fas fa-heart fa-lg ml-1 mt-3 red"></i>
+                            </a>
+                        {% else %}
+                            <span class="d-none d-lg-inline-block green">Add to Wishlist: </span>
+                            <a class="wishlist_btn hvr-grow" href="{% url 'add_to_wishlist' product.id %}">
+                                <i class="hover-heart-red far fa-heart fa-lg ml-1 mt-3 green"></i>
+                            </a>
+                        {% endif %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
