@@ -47,4 +47,3 @@ class Comment(models.Model):
             Returns: Comment body as string
         """
         return str(self.comment_body)
-
