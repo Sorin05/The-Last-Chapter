@@ -91,8 +91,8 @@ The Last Chapter is an book retailer best known for selling books, stationery, c
   
   ### Strategy
 
-  - This is a website where users that love audio books can play them to their kids : 
-  - Users that have kids
+  - This is a website where users can find old books and office supplies : 
+  - Users that are passionate readers :
    ### Scope
    - The website provides for the user an easy navigation , photos,content,filter and prices with regards the books.
 
