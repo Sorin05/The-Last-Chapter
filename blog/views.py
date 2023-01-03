@@ -6,7 +6,6 @@ from .models import BlogPost, Comment
 from .forms import BlogPostForm, CommentForm
 
 
-
 def blog(request):
     """
     View to render the blog page
