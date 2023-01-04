@@ -1,9 +1,6 @@
 from django.contrib import admin
-
 from django.contrib import admin
-# Internal:
 from .models import BlogPost, Comment
-# -----------------------------------------------------------------------------
 
 
 class BlogAdmin(admin.ModelAdmin):
@@ -11,8 +8,7 @@ class BlogAdmin(admin.ModelAdmin):
     Class defining the BlogPost model in admin page
     """
     list_display = (
-        'id', 'owner', 'title', 'created_at', 'image', 'second_image',
-        'third_image', 'fourth_image', 'fifth_image',
+        'id', 'owner', 'title', 'created_at', 'image',
     )
     ordering = ('owner', 'created_at')
     search_fields = ('title', )

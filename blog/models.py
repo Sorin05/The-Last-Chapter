@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class BlogPost(models.Model):
@@ -11,28 +12,16 @@ class BlogPost(models.Model):
     content = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    second_image_url = models.URLField(max_length=1024, null=True, blank=True)
-    second_image = models.ImageField(null=True, blank=True)
-    third_image_url = models.URLField(max_length=1024, null=True, blank=True)
-    third_image = models.ImageField(null=True, blank=True)
-    fourth_image_url = models.URLField(max_length=1024, null=True, blank=True)
-    fourth_image = models.ImageField(null=True, blank=True)
-    fifth_image_url = models.URLField(max_length=1024, null=True, blank=True)
-    fifth_image = models.ImageField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        """
-        Returns the blogpost title string
-            Arguments: self (object): self
-            Returns: BlogPost title as string
-        """
+
         return str(self.title)
 
 
 class Comment(models.Model):
     """
-    Class defining the fields in Comment model
+    Class defining the fields in Comment
     """
 
     posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -41,9 +30,5 @@ class Comment(models.Model):
     posted_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        """
-        Returns the comment string
-            Arguments: self (object): self
-            Returns: Comment body as string
-        """
+
         return str(self.comment_body)
