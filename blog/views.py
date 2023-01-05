@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-
 from .models import BlogPost, Comment
 from .forms import BlogPostForm, CommentForm
 
@@ -24,10 +23,6 @@ def blog(request):
 def blog_post(request, blog_post_id):
     """
     View to render blog posts
-        Arguments:
-            request (object): The Http request
-            blog_post_id: ID of the blog post being viewed
-        Returns: render blog post display page with context
     """
 
     blog_post = get_object_or_404(BlogPost, pk=blog_post_id)

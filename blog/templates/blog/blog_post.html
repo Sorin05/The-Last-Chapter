@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block content%}
+    <div class="container mt-5">
+        <div class="row pt-lg-5">
+            <div class="col-12 col-md-7 mx-auto">
+                <h1 class="fs-2 my-3 text-center">{{ blog_post.title}}</h1>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-12 col-md-5">
+                            {% if blog_post.image %}
+                                <img src="{{ blog_post.image.url }}" class="d-block w-100" alt="Image for {{ blog_post.title }}">
+                            {% else %}
+                                <img src="{{ MEDIA_URL }}noimage.png" class="d-block w-100" alt="No image available">
+                            {% endif %}
+
+                <p class="my-2">Article posted by: {{ blog_post.owner }} on: {{ blog_post.created_at | date:"D d M Y" }}</p>
+
+
+                <section class="d-none d-md-block comments">
+                    <hr>
+                    <h2 class="fs-4">User opinions:</h2>
+                    {% for comment in comments %}
+                    <div class="text-muted">
+                        <small>by: {{ comment.posted_by }} on {{ comment.posted_at | date:"D d M Y" }}</small>
+                        {% if request.user.is_superuser or request.user == comment.posted_by %}
+                            <a class="float-end" href="{% url 'delete_comment' comment.id %}"><strong>Delete comment</strong></a>
+                        {% endif %}
+                    </div>
+                    <p>{{ comment.comment_body }}</p>
+                    <hr>
+                    {% endfor %}
+                </section>
+
+            </div>
+
+            <section class="col-12 col-md-7 blog-content my-3 py-3">
+                <h2 hidden>Article body</h2>
+                {{ blog_post.content | linebreaks }}
+            </section>
+            <form action="{% url 'blog_post' blog_post.id %}" method="POST" class="form pt-3 add-stock-form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in comment_form %}
+                    <div class="pt-2 px-5">
+                        {{ field | as_crispy_field }}
+                    </div>
+                {% endfor %}
+                <div class="col-12 text-end p-3">
+                    <button class="btn btn-dark" type="submit">Post comment</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+{% endblock %}
