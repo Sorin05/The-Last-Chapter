@@ -1,1 +1,1 @@
-web: gunicorn witch.wsgi 
+web: gunicorn core.wsgi 
