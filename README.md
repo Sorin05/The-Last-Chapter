@@ -53,9 +53,7 @@
 The Last Chapter is an book retailer best known for selling books, stationery, cards, gifts. I used an double entendre as this would be my "Last Chapter" with Code Institute 
 The inspiration of the website came from my visit to Bucharest Romania and saw an old man selling old books on the sidewalk of a main street, I stoped and had a browse and I was impressed by the huge selection of old books, I tought that he could have a cool website for old vintage books. 
 Unfornutely I cannot finish this project on time so my first submision is of a incomplete project that im still working on . The whole project is based on Code Institute Boutique Ado with the intent of adding my own apps and features making it an online bookstore and office supplies. 
-My second attempt to finish the project for the deadline is a semi-failure in my opinion 
-Note:
-
+My second attempt to finish the project for the deadline is a semi-failure in my opinion.
 
 ## UX
 
