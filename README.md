@@ -45,12 +45,17 @@
       - [Acknowledgements](#acknowledgements)
 
 **[LIVE DEMO - https://the-last-chapter.herokuapp.com
+
 *
 
 
 ## Introduction
-The Last Chapter is an book retailer best known for selling books, stationery, cards, gifts. Unfornutely I cannot finish this project on time so my first submision is of a incomplete project that im still working on . The whole project is based on Code Institute Boutique Ado with the intent of adding my own apps and features making it an online bookstore and office supplies. 
-My second attempt to finish the project for the deadline is a semi failure too as I didnt have enough time to complete a 404 page a facebook page and another few bits and pieces 
+The Last Chapter is an book retailer best known for selling books, stationery, cards, gifts. I used an double entendre as this would be my "Last Chapter" with Code Institute 
+The inspiration of the website came from my visit to Bucharest Romania and saw an old man selling old books on the sidewalk of a main street, I stoped and had a browse and I was impressed by the huge selection of old books, I tought that he could have a cool website for old vintage books. 
+Unfornutely I cannot finish this project on time so my first submision is of a incomplete project that im still working on . The whole project is based on Code Institute Boutique Ado with the intent of adding my own apps and features making it an online bookstore and office supplies. 
+My second attempt to finish the project for the deadline is a semi-failure in my opinion 
+Note:
+
 
 ## UX
 
@@ -78,7 +83,7 @@ My second attempt to finish the project for the deadline is a semi failure too a
   - As a shopper, I can choose the category that I want to see and the group of products I am interested <a>
   - As a shopper, I want to sort the list of available products so I can easily categorically sort products.</a>
   
-- PURCHAING AND CHECKOUT
+- PURCHASING AND CHECKOUT
   - As a shopper, I want to adjust the number of individual items in my bag so I can easily make changes to my purchase before checking out.</a>
   - As a shopper, I can delete items from my basket so that I can buy only the items that I need.</a>
   - As a shopper I can press the delete button so that I can have the final price after I had deleted an item in my cart/basket.</a>
@@ -97,17 +102,21 @@ My second attempt to finish the project for the deadline is a semi failure too a
    - The website provides for the user an easy navigation , photos,content,filter and prices with regards the books.
 
 ## Typography
-
-
-## Color
-
+ - For typography has been used <a href=https://fonts.google.com/specimen/Roboto
+ target='_blank'> Google Fonts Roboto</a>
 
  ## Structure
  ### Skeleton
 
    ### Wireframes 
   - Wireframes created with Balsamiq
-  
+  ![wireframe1.png](readme/wireframe1.png)
+
+  ![wireframe2.png](readme/wireframe2.png)
+
+  ![wireframe3.png](readme/wireframe3.png)
+
+  ![wireframe4.png](readme/wireframe4.png)
 
    ### Mobile
 
@@ -117,39 +126,43 @@ My second attempt to finish the project for the deadline is a semi failure too a
 
 
 
-   </details>
-
 ## Database Schema
 
-
+![schema.png](readme/schema.png)
+  
 
 ## Features
 
   
-   ### Existing Features (Photo Links)
+   ### Existing Features
 
    #### Navbar
 
-   
+   ![Navbar.png](readme/navbar.png)
   
    #### Homepage
 
-   
+   ![landingpage.png](readme/landingpage.png)
 
-   #### Footer
+   #### Wishlist
    
+![wishlist.png](readme/wishlist.png)
 
 
-   #### Pay form Page
+   #### Checkout Page
    
+![checkout.png](readme/checkout.png)
 
 
    #### Register as a User
-  
+
+  ![signup.png](readme/signup.png)
+
 
 
    #### Product Page
- 
+ ![products.png](readme/products.png)
+
 
    #### 404 Page
    Due to time restrections I wouldnt be able to add a 404 page in time for my submmision , I will add one after
@@ -159,24 +172,12 @@ My second attempt to finish the project for the deadline is a semi failure too a
 
    #### Model of payment based on subscriptions
 
-   - 
-
    #### Chat window
-
-   - 
-
-   #### Wishlist
-  
-   - 
-
-  ## SEO
-
-
-  ## Social Media
- 
-
-  ## Email Marketing 
-  
+   #### SEO
+   #### Social Media
+   #### Email Marketing 
+   ##### robots.txt
+   ##### sitemap.xml  
 
   ## Testing
 
@@ -189,7 +190,7 @@ My second attempt to finish the project for the deadline is a semi failure too a
 
   - All user stories in the list above has been tested and confirmed after implementation.
    
-  #### robots.txt  
+  #### robots.txt
    -  
   #### sitemap.xml  
    -  
@@ -198,68 +199,57 @@ My second attempt to finish the project for the deadline is a semi failure too a
 
   * Lighthouse
 
-    
+    ![lighthouse-test.png](readme/lighthouse-test.png)
 
   * HTML
 
-    
-
   * CSS
-
-   
+    ![validator.png](readme/validator.png)
 
 
   * PEP8 
-  <
-
-  </details>
-
+  
 
   ## Deployment
 
   Local Deployment
 
-   I used Gitpod to write the code for my project, with regular commits to document the creation process. For this project, I deployed it to Heroku and used "git push Heroku master" to ensure that my GitHub pushes were also pushed to Heroku.
-
-      Create an .env that contains these variables :
-      SECRET_KEY=*******
-      DEVELOPMENT=True
-      ENVIRON=DEVELOPMENT
-      STRIPE_PKEY=*******
-      STRIPE_SKEY=*******
+  Running locally
+* Log in to GitHub and locate the Repository for this site.
+* Under the repository name, above the list of files, click "Code".
+* Here you can either Clone or Download the repository.
+* You should clone the repository using HTTPS, clicking on the icon to copy the link.
+* Open Git Bash.
+* Change the current working directory to the new location, where you want the cloned directory to be.
+* Type git clone, and then paste the URL that was copied in Step 4.
+* Press Enter, and your local clone will be created.
+* You will also need to install all of the project requirements. This can be done using the command pip3 install -r requirements.txt.
+* Type python3 app.py in your GitPod terminal to run your local site of this project.
 
   #### Deploy to Heroku
 
-    To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+    Deployment
+The website of this project requires back-end technologies such as server, application, and database so the website is deployed on Heroku, which is a cloud platform with a service supporting several programming languages, because GitHub can only host a static websites.
+Before deploying the website to Heroku, there are three important steps to follow to make the application work in Heroku correctly.
+* Create requirements.txt file that contains the names of packages being used in Python. It is important to update the file if other packages or modules are installed during the project.
+* Create Procfile that contains the name of the application file so that Heroku knows what to run.
+* Push them into GitHub.
+* Once above steps have been followed the website can be deployed. Please find the steps of the deployment in Heroku:
+* Create an account in Heroku
+* Click New & Create new app to create a new app
+* Put an app name, which must be unique, choose a region and click create app
+* Go to Deploy section and click Connect to GithHub
+* Search for the repository by the repository name and connect it
+* Before clicking Enable Automatic Deploys, hidden variables such as IP address, PORT, SECRET_KEY need to be recorded in Heroku. Go to Settings, click 'Reveal config vars' and fill out necessary keys and values.
+* Once all the hidden variables are recorded, then click Enable Automatic Deploys and click Deploy Branch (Main should be selected unless you want other branches to be deployed).
+* When the app is deployed by Heroku correctly, there is a confirmation message and you can access the app.
 
-    Start by installing everything in the requirements.txt file.
-    You should have the corect requirements.txt and Procfile before moving on with the deployment.
-    Log in to Heroku apps
-    On Heroku page go to dashboard then to the "New" menu and choose "Create new app"
-    Create a unique name for your app , select your region and click "Create app".
-    Now the new app's dashboard is opened. Click on the resources tab.
-    Add the Heroku Postgres Add-on.
-    Go to the settings tab and reveal the Config Vars and add :
-    ALLOWED_HOSTS=https://heroku-url
-    CLOUDINARY_URL=cloudinary://cloudinary-url
-    DATABASE_URL=postgres://database_url
-    DEVELOPMENT=False (DEBUG)
-    ENVIRON=PRODUCTION
-    EMAIL_HOST=smtp.server
-    EMAIL_PORT=587
-    EMAIL_HOST_USER=****
-    EMAIL_HOST_PASS=****
-    EMAIL_FROM=email@from
-    SECRET_KEY=****
-    STRIPE_PKEY=****
-    STRIPE_SKEY=****
-    STRIPE_ENDPOINT_SECRET=****
-    Click on "Deploy" and select your deploy method and repository.
-    Click "Connect" on selected repository
-    Click "Deploy Branch" in the manual deploy section. -> Heroku will now deploy the App.
-    Development Environment
 
-  ## Credits
+## Credits
+
+
+Code Institute Boutique Ado walkhtrough
+
 
   #### Media
 
@@ -323,4 +313,4 @@ My second attempt to finish the project for the deadline is a semi failure too a
  
   #### Acknowledgements
 
- 
+ Huge Thank you to Andrew Dempsey an absolute gentleman 
