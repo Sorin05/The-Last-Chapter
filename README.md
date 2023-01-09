@@ -44,13 +44,13 @@
       - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
       - [Acknowledgements](#acknowledgements)
 
-**[LIVE DEMO - 
+**[LIVE DEMO - https://the-last-chapter.herokuapp.com
 *
 
 
 ## Introduction
 The Last Chapter is an book retailer best known for selling books, stationery, cards, gifts. Unfornutely I cannot finish this project on time so my first submision is of a incomplete project that im still working on . The whole project is based on Code Institute Boutique Ado with the intent of adding my own apps and features making it an online bookstore and office supplies. 
-
+My second attempt to finish the project for the deadline is a semi failure too as I didnt have enough time to complete a 404 page a facebook page and another few bits and pieces 
 
 ## UX
 
@@ -152,7 +152,7 @@ The Last Chapter is an book retailer best known for selling books, stationery, c
  
 
    #### 404 Page
-   
+   Due to time restrections I wouldnt be able to add a 404 page in time for my submmision , I will add one after
 
 
    ### Future Features 
@@ -180,7 +180,7 @@ The Last Chapter is an book retailer best known for selling books, stationery, c
 
   ## Testing
 
-  The project was manually tested by fallowing the steps :
+  The project was manually tested by following the steps :
   - Code was run trough the validator resulting no issues
   - Deploying the project from gitpod workspace trough Heroku
   - The site was also tested on I-Pad , I-Phone and Laptop.
