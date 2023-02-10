@@ -107,14 +107,14 @@ My second attempt to finish the project for the deadline is a semi-failure in my
  ### Skeleton
 
    ### Wireframes 
-  - Wireframes created with Balsamiq
+  
   ![wireframe1.png](readme/wireframe1.png)
 
   ![wireframe2.png](readme/wireframe2.png)
 
-  ![wireframe3.png](readme/wireframe3.png)
+  ![wireframe3.png](readme/wireframes3.png)
 
-  ![wireframe4.png](readme/wireframe4.png)
+  ![wireframe4.png](readme/wireframes4.png)
 
    ### Mobile
 
@@ -311,4 +311,4 @@ Code Institute Boutique Ado walkhtrough
  
   #### Acknowledgements
 
- Huge Thank you to Andrew Dempsey an absolute gentleman 
+Code Institute 
