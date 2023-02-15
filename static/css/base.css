@@ -334,6 +334,10 @@ a.category-badge > span.badge:hover {
     }
 }
 
+footer>div>div>ul>li {
+    padding-bottom: 8px;
+}
+
 /* MailChimp */
 #mc_embed_signup {
     background: #fff;
