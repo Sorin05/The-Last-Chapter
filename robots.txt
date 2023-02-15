@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /bag/
+Disallow: /accounts/
+Sitemap: https://the-last-chapter.herokuapp.com/
