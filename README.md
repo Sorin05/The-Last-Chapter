@@ -1,4 +1,17 @@
-# Table of Contents
+# The Last Chapter
+
+
+
+The Last Chapter is a full stack e-commerce website built using Django, Python, HTML, CSS and JavaScript. The website utilises Stripe as the payment processor.
+
+This project was created as my 5th milestone project for my Level 5 Diploma in Web Application Development with the Code Institute.
+
+
+**[LIVE DEMO - https://the-last-chapter.herokuapp.com
+
+---
+
+## Table of Contents
 - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [UX](#ux)
@@ -48,16 +61,26 @@
 
 *
 
-
 ## Introduction
-The Last Chapter is an book retailer best known for selling books, stationery, cards, gifts. I used an double entendre as this would be my "Last Chapter" with Code Institute 
-The inspiration of the website came from my visit to Bucharest Romania and saw an old man selling old books on the sidewalk of a main street, I stoped and had a browse and I was impressed by the huge selection of old books, I tought that he could have a cool website for old vintage books. 
-Unfornutely I cannot finish this project on time so my first submision is of a incomplete project that im still working on . The whole project is based on Code Institute Boutique Ado with the intent of adding my own apps and features making it an online bookstore and office supplies. 
-My second attempt to finish the project for the deadline is a semi-failure in my opinion.
+
+
+The Last Chapter is a Business to Consumer (B2C) e-commerce site.
+The site is an book retailer best known for selling books, stationery, cards, gifts and souvenirs. 
+The inspiration of the website came from my visit to Bucharest Romania and saw an old man selling old books on the sidewalk of a main street, I stoped and had a browse and I was impressed by the huge selection of old books, I tought that he could have a cool website for old vintage books.
+
+The sites primary audience will be people who love to read hard cover books.
+Print books have the feel of a book that many readers love. You can hold it, turn the pages, and feel the paper, readers of print books absorb and remember more of the plot than readers of e-books do, according to a study that was presented in Italy in 2014. In an earlier study, print readers also scored higher in other areas, such as empathy, immersion in the book, and understanding of the narrative.
+
+According to statista.com
+
+Data on revenue from hardback book sales in the United States between 2016 and 2021 showed that the figure increased consistently on an annual basis with the exception of 2019, and reached 3.7 billion U.S. dollars in 2021. Hardback sales make up the majority of reported trade revenues within the U.S. book publishing industry, generating more than e-books, downloaded audio, physical audio, and board books combined. 
+
 
 ## UX
 
   ### User Stories
+
+  User roles are included in this project as there are different features of the site dependant on what type of user you are. There are three categories of user for the site, guest users (those who do not have an account), Users (who have signed up and verified their account) and Admins (users who have superuser status and are able to perform additional tasks on the site reserved for shop owners, such as adding new products.) Admins are also able to use their accounts in the same way a user would, such as purchasing items.
 
   User story format/steps has been taken from Boutique Ado and imported from Repository ecommerce2 (a test for my project) and more issues have been resolved manually during the project.
   
@@ -94,7 +117,7 @@ My second attempt to finish the project for the deadline is a semi-failure in my
   
   ### Strategy
 
-  - This is a website where users can find old books and office supplies : 
+  - This is a website where users can find old books, office supplies and soubvenirs : 
   - Users that are passionate readers :
    ### Scope
    - The website provides for the user an easy navigation , photos,content,filter and prices with regards the books.
@@ -103,16 +126,29 @@ My second attempt to finish the project for the deadline is a semi-failure in my
  - For typography has been used <a href=https://fonts.google.com/specimen/Roboto
  target='_blank'> Google Fonts Roboto</a>
 
- ## Structure
- ### Skeleton
+ 
+### Skeleton
 
-   ### Wireframes 
+#### **Wireframes** 
+  
+  * Base Template - This template contains the header and footer which are used throughout the website. This template is used as a base and then other pages content will be injected into main section using django template language.
   
   ![wireframe1.png](readme/wireframe1.png)
 
+* Register Page - The register page will allow users to register for an account with The Last Chapter in one of two ways - registering for an account with a username/ 
+   email or via a social account.
+
+  The username/email path will require users to choose a username, a password which will be entered twice to confirm the user hasn't made an error when entering the password and their email address, which again will be required to be entered twice to confirm there are no mistakes in the users input.
+
   ![wireframe2.png](readme/wireframe2.png)
 
+* Bag Page - When a user has items in their bag, they will be shown an image of the item, the title
+
+* Wish list Page - The wish list page is very similar in layout to the bag page. It displays an image of the item, the title, selected size and sku for the product along with the product price. There is also has a button to remove the product from their wish list. The user can add an item from their wish list to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
+
   ![wireframe3.png](readme/wireframes3.png)
+
+* Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be pre-populated with this information.
 
   ![wireframe4.png](readme/wireframes4.png)
 
@@ -163,7 +199,7 @@ My second attempt to finish the project for the deadline is a semi-failure in my
 
 
    #### 404 Page
-   Due to time restrections I wouldnt be able to add a 404 page in time for my submmision , I will add one after
+   
 
 
    ### Future Features 
@@ -171,10 +207,17 @@ My second attempt to finish the project for the deadline is a semi-failure in my
    #### Model of payment based on subscriptions
 
    #### Chat window
+
    #### SEO
+
    #### Social Media
+    
+  ![facebookscreenshot.png](readme/facebookscreenshot.png)
+
    #### Email Marketing 
+
    ##### robots.txt
+
    ##### sitemap.xml  
 
   ## Testing
@@ -242,6 +285,45 @@ Before deploying the website to Heroku, there are three important steps to follo
 * Once all the hidden variables are recorded, then click Enable Automatic Deploys and click Deploy Branch (Main should be selected unless you want other branches to be deployed).
 * When the app is deployed by Heroku correctly, there is a confirmation message and you can access the app.
 
+#### **Set up AWS hosting for static and media files**
+
+! NOTE: These instructions are for setting up AWS hosting as of 5/1/23 - these may change slightly in future versions of AWS.
+
+1. Sign up or login to your [aws amazon account](https://aws.amazon.com) on the top right by using the manage my account button and then navigate to S3 to create a new bucket.
+2. The bucket will be used to store our files, so it is a good idea to name this bucket the same as your project. Select the region closest to you. In the object ownership section we need to select ACLs enabled and then select bucket owner preferred. In the block public access section uncheck the block public access box. You will then need to tick the acknowledge button to make the bucket public. Click create bucket.
+3. Click the bucket you've just created and then select the properties tab at the top of the page. Find the static web hosting section and choose enable static web hosting, host a static website and enter index.html and error.html for the index and error documents (these won't actually be used.)
+4. Open the permissions tab and copy the ARN (amazon resource name). Navigate to the bucket policy section click edit and select policy generator. The policy type will be S3 bucket policy, we want to allow all principles by adding `*` to the input and the actions will be get object. Paste the ARN we copied from the last page into the ARN input and then click add statement. Click generate policy and copy the policy that displays in a new pop up. Paste this policy into the bucket policy editor and make the following changes: Add a `/*` at the end of the resource value. Click save.
+
+
+#### **Creating AWS groups, policies and users**
+
+1. Click the services icon on the top right of the page and navigate to IAM - manage access to AWS services. On the left hand navigation menu click user groups and then click the create group button in the top right. This will create the group that our user will be placed in.
+2. Choose a name for your group and click the create policy button on the right. This will open a new page.
+3. Click on the JSON tab and then click the link for import managed policy on the top right of the page.
+4. Search for S3 and select the one called AmazonS3FullAccess, then click import.
+5. We need to make a change to the resources, we need to make resources an array and then change the value for resources. Instead of a `*` which allows all access, we want to paste in our ARN. followed by a comma, and then paste the ARN in again on the next line with `/*` at the end. This allows all actions on our bucket, and all the resources in it.
+6. Click the next: tags button and then the next:review .
+7. Give the policy a name and description. Click the create policy button.
+8. Now we need to atach the policy we just created. On the left hand navigation menu click user groups, select the group and go to the permissions tab. Click the add permissions button on the right and choose attach policies from the dropdown.
+9. Select the policy you just created and then click add permissions at the bottom.
+10. Now we'll create a user for the group by clicking on the user link in the left hand navigation menu, clicking the add users button on the top right and giving our user a username . Select programmatic access and then click the next: permissions button.
+11. Add the user to the group you just created and then click next:tags button, next:review button and then create user button.
+12. You will now need to download the CSV file as this contains the user access key and secret access key that we need to insert into the Heroku config vars. Make sure you download the CSV now as you won't be able to access it again.
+
+#### **Setting up Stripe**
+
+1. We now need to add our Stripe keys to our config vars in Heroku to keep these out of our code and keep them private. Log into Stripe, click developers and then API keys.
+2. Create 2 new variables in Heroku's config vars - for the publishable key (STRIPE_PUBLIC_KEY) and the secret key (STRIPE_SECRET_KEY) and paste the values in from the Stripe page.
+3. Now we need to add the WebHook endpoint for the deployed site. Navigate to the WebHooks link in the left hand menu and click add endpoint button.
+4. Add the URL for our deployed sites WebHook, give it a description and then click the add events button and select all events. Click Create endpoint.
+5. Now we can add the WebHook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
+6. In settings.py:
+
+    ```python
+    STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+    STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+    STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+    ```
 
 ## Credits
 
