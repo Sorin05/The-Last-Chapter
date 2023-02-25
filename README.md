@@ -172,11 +172,11 @@ Data on revenue from hardback book sales in the United States between 2016 and 2
 
    #### Navbar
 
-   ![Navbar.png](readme/navbar.png)
+![Navbar.png](readme/Navbar.png)
   
    #### Homepage
 
-   ![landingpage.png](readme/landingpage.png)
+![landingpage.png](readme/landingpage.png)
 
    #### Wishlist
    
@@ -216,7 +216,12 @@ Data on revenue from hardback book sales in the United States between 2016 and 2
 
    #### Email Marketing 
 
+ - [Mailchimp](https://mailchimp.com/) was used for this section 
+  - In the website's footer, users can sign up for an email newsletter.
+  - All admin emails include a convenient unsubscribe link.
+
    ##### robots.txt
+
 
    ##### sitemap.xml  
 
