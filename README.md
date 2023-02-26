@@ -232,6 +232,51 @@ Data on revenue from hardback book sales in the United States between 2016 and 2
   - Deploying the project from gitpod workspace trough Heroku
   - The site was also tested on I-Pad , I-Phone and Laptop.
   
+
+### Python
+
+[Code Institute Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python. I have also installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in my gitpod to enable me to check my code meets PEP8 guidelines during development.
+
+| File | Result | Evidence |
+| :--- | :--- | :---: |
+| custom_storages.py | Pass | [custom_storages.py validation](readme/custom_storages.png) |
+| **The Last Chapter** |
+
+| **BAG** |
+| bag/urls.py | Pass | [urls.py validation](readme/bag_urls_test.png) |
+| bag/views.py | Pass | [views.py validation](readme/bagviewstest.png) |
+| bag/context.py | Pass | [contexts.py validation](readme/contextbag.png) |
+| **CHECKOUT** |
+| checkout/admin.py | Pass | [admin.py validation](readme/checkout_admin.png) |
+| checkout/forms.py | Pass | [forms.py validation](readme/checkout_forms.png) |
+| checkout/models.py | Pass | [models.py validation](readme/checkout_models.png) |
+| checkout/signals.py | Pass | [signals.py validation](readme/checkout_signals_test.png) |
+| checkout/urls.py | Pass | [urls.py validation](readme/checkout_urls_test.png) |
+| checkout/views.py | Pass | [views.py](readme/checkout_views.png) |
+| checkout/webhook_handler.py | Pass | [webhook_handler.py](readme/checkout_webhook_handler_test.png) |
+| checkout/webhooks.py | Pass| [webhooks.py](readme/checkout_webhook_test.png) |
+| **PRODUCTS** |
+| products/admin.py | Pass | [admin.py validation](readme/products_admin.png) |
+| products/apps.py | Pass | [apps.py validation](readme/products_apps.png) |
+| products/forms.py | Pass | [forms.py validation](readme/products_forms.png) |
+| products/models.py | Pass | [models.py validation](readme/products_models.png) |
+| products/urls.py | Pass | [urls.py validation](readme/products_urls.png) |
+| products/views.py | Pass | [views.py validation](readme/products_views.png) |
+| products/widgets.py | Pass | [widgets.py validation](readme/products_widgets.png) |
+| **PROFILES** |
+| profiles/apps.py | Pass | [apps.py validation](readme/profile_apps.png) |
+| profiles/forms.py | Pass | [forms.py validation](readme/profile_forms.png) |
+| profiles/models.py | Pass | [models.py validation](readme/profiles_models.png) |
+| profiles/urls.py | Pass | [urls.py validation](readme/profile_urls.png) |
+| profiles/views.py | Pass | [views.py validation](readme/profile_views.png) |
+| **BLOG** |
+| blog/urls.py | Pass | [urls.py validation](readme/blog_urls_test.png)
+| blog/views.py | Pass | [views.py validation](readme/blog_views_test.png)
+| blog/widgets.py | Pass | [widgets.py validation](readme/blog_widgets_test.png)
+| blog/models.py | Pass | [models.py validation](readme/blog_models_test.png)
+| blog/forms.py | Pass | [forms.py validation](readme/blog_forms_test.png)
+| blog/admin.py | Pass | [admin.py validation](readme/blog_admin_test.png)
+
   ### Testing User Stories from User Experience (UX) Section
 
   - All user stories in the list above has been tested and confirmed after implementation.

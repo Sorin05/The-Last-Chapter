@@ -3,12 +3,11 @@ html {
 }
 
 body {
-    background-image: url(/media/landing.jpg);
-    width: 100vw;
+    background-image: url(/media/landingimage2.jpg);
     height: 100vh;
-    background-position: center center;
+    object-fit: contain;
     background-size: cover;
-    background-size: 100%;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     font-family: 'Roboto Serif', serif;
 }
