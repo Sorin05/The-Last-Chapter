@@ -241,7 +241,6 @@ Data on revenue from hardback book sales in the United States between 2016 and 2
 | :--- | :--- | :---: |
 | custom_storages.py | Pass | [custom_storages.py validation](readme/custom_storages.png) |
 | **The Last Chapter** |
-
 | **BAG** |
 | bag/urls.py | Pass | [urls.py validation](readme/bag_urls_test.png) |
 | bag/views.py | Pass | [views.py validation](readme/bagviewstest.png) |
