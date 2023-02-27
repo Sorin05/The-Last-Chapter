@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    background-image: url(/media/landingimage2.jpg);
+    background-image: url(/media/a-book\ -cropped.jpg);
     height: 100vh;
     object-fit: contain;
-    background-size: cover;
-    background-size: 100vw 100vh;
+    background-size: contain;
+    background-size: 250vh;
     background-repeat: no-repeat;
     font-family: 'Roboto Serif', serif;
 }
@@ -60,11 +60,16 @@ body {
     color: #000 !important;
 }
 
+.text-black-title {
+    color: #25e410 !important;
+    
+}
+
 .border-black {
     border: 1px solid black !important;
 }
 
-.bg-black{
+.bg-blac {
     background:#000 !important;
 }
 
@@ -345,5 +350,5 @@ footer>div>div>ul>li {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
+    width: auto;
 }
