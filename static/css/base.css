@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url(/media/a-book\ -cropped.jpg);
+    background-image: url(/media/landingimage.jpg);
     height: 100vh;
     object-fit: contain;
     background-size: contain;
