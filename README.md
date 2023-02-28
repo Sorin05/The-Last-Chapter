@@ -1,6 +1,6 @@
 # The Last Chapter
 
-
+![The Last Chapter](readme/responsive_final.png)
 
 The Last Chapter is a full stack e-commerce website built using Django, Python, HTML, CSS and JavaScript. The website utilises Stripe as the payment processor.
 
@@ -438,6 +438,14 @@ Code Institute Boutique Ado walkhtrough
   - [AmIResponsive](https://ui.dev/amiresponsive) - To check if the site is responsive on different screen sizes.
   - [W3CMarkupValidator](https://jigsaw.w3.org/) - Was used to validate HTML.
   - [Colors](https://color-hex.org/) - To make color palette
+
+## Errors
+
+![Errors](readme/error1.png)
+
+![Errors](readme/htmlerror2.png)
+
+![Errors](readme/htmlerror3.png)
 
  
   #### Acknowledgements
